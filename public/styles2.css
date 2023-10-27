@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -190px; /* Initially hidden */
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-size: 10px; /* Adjust the font size as needed */
+    color: #4b4f54; /* You can use any color you prefer */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle text shadow */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Center-aligns the text */
+}
+
+.hamburger {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.content {
+    margin-left: 100px; /* Adjust the margin to your preference */
+    transition: 0.3s;
+    padding: 15px;
+}
+
+/* Show the sidebar when active */
+.active {
+    left: 0;
+}
+
+
+
+.footer {
+    position: absolute; /* Set the position to absolute */
+    bottom: 0; /* Position it at the bottom of its containing element (usually the body or another container) */
+    width: 100%; /* Make it span the full width of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333; /* Optional: Add a background color */
+    color: #fff; /* Optional: Set text color to white */
+}
+
+.contact-info, .rights {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.about_us {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px; /* Adjust margin as needed */
+}
+

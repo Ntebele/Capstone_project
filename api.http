@@ -1,0 +1,88 @@
+ GET http://localhost:4011/api/details
+
+
+###
+post http://localhost:4011/api/details/create
+content-type: application/json
+
+{
+    "email": "ntebele@gmail.com",
+    "first_name": "Nedddvsa",
+    "last_name": "sufdgdK",
+    "occupation": "Soutadsware Engineering",
+    "numbers": 78539078,
+    "addresss":"Westdene johannesburg Gauteng",
+    "password_hash" : "1"
+}
+
+###
+post http://localhost:4011/api/details/images 
+content-type: application/json
+
+{
+   "picture_data" : "public/images/profile_pic.jpg"
+}
+
+###
+post http://localhost:4011/api/details/deleteUser
+content-type: application/json
+
+{
+
+    "email": "youadcxas@me.com"
+}
+
+###
+POST http://localhost:4011/api/details/updateUser
+content-type: application/json
+
+{
+    "email": "	him@you",
+    "first_name": "Mapau",
+    "last_name": "lenyora",
+    "occupation": "Softsfhfware Engineer",
+    "numbers": "09789437435",
+    "addresss":"manhattan",
+    "password_hash": "12fhf3"
+   
+}
+
+###
+POST http://localhost:4011/api/details/login
+content-type: application/json
+
+{
+                                                         
+    "email": "user@example.com",
+    "password_hash": "123"
+
+}
+
+###
+POST http://localhost:4011/api/details/aim
+content-type: application/json
+
+{
+                                                         
+    "brief": "I want to dsdo a shallow foundation slope analysis ",
+    "first_name": "Johsny"
+
+}
+
+
+###
+
+POST http://localhost:4011/api/details/UserComments 
+content-type: application/json
+
+{
+                                                         
+    "comment": "I want to do a shallow foundation slope analysis analysis ",
+    "first_name": "Johnny"
+
+}
+
+
+
+
+

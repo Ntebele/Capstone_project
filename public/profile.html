@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="usersDetails.js"></script>
+    <script src="toogle.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+        integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body x-data="whichSlope">
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div></div> <!-- Placeholder for alignment -->
+            <form class="d-inline-block" action="/search" method="GET">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="query">
+                    <button class="btn btn-outline-secondary" type="submit">Go</button>
+                </div>
+            </form>
+            <img src="images/which_slope.jpg" alt="Logo" style="height: 50px;">
+            <!-- Adjust path_to_your_logo.png to your actual logo path -->
+        </div>
+    </header>
+
+
+    <p>&nbsp</p>
+
+    <div class="sidebar">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <p>&nbsp</p>
+        <ul class="menu">
+            <li><a href="home-page.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="slope-analysis.html">Slope Analysis</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="explore.html">Get Connected</a></li>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <button @click="logout()">logout</button>
+        </ul>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/john_doe.jpg" alt="Logo" width="200">
+                <p>&nbsp</p>
+                <ul class="profile links">
+                    <li><a href="update.html">
+                            <h6>EDIT PROFILE</h6>
+                        </a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-8">
+                <div x-text="email"></div>
+                <p>Steven Magaya</p>
+                <p x-text="occupation"></p>
+                <p><img src="images/phone_icon.png" alt="tel_icon " width="20"> 0740588909</p>
+                <p>16 Leo Street kenilworth</p>
+                <p>Johannesburg, 2190</p>
+                <p>&nbsp</p>
+                <div class="about_me">
+
+                    <h4>ABOUT ME</h4>
+                    <p>A Geotechnical Civil Engineer professional who plays a crucial role in the field
+                        of civil engineering. I focus on the study and analysis of the Earth's subsurface to assess
+                        soil and rock properties, geological conditions, and groundwater levels. I also provide
+                        critical insights for construction projects, helping to ensure the stability and safety of
+                        structures such as buildings, bridges, and highways.I also utilize my
+                        expertise to design foundations, retaining walls, and other support systems that can withstand
+                        various environmental challenges.My line of work is essential for the successful execution of
+                        infrastructure projects and the protection of public safety.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>&nbsp</p>
+    <div class="footer">
+        <div class="contact-info">
+            <p>Contact Us</p>
+            <p>
+                Email: <a href="which@Slope.com">Which@Slope.com</a>
+            </p>
+            <p>Phone: +271 123 7890</p>
+        </div>
+        <div class="copyright">&copy; 2023 All rights reserved.</div>
+    </div>
+
+</body>
+
+</html>
